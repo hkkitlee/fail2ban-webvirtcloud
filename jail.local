@@ -2,7 +2,7 @@
 enabled  = true
 port     = http,https
 filter   = nginx-badbots
-action = iptables-multiport[name=nginx-webvirtcloud, port="9000,10000", protocol=tcp]
+action = iptables-multiport[name=nginx-webvirtcloud, port="9000,9091", protocol=tcp]
 logpath = /var/log/nginx/*log
 bantime = 864000
 maxretry = 2
